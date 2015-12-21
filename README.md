@@ -8,11 +8,17 @@ BenchMe is implemented in Python 2.7, and it utilizes various Linux commands inc
 
 ### BenchMe in Action: 
 BecnhMe runs multiple system performance tests listed below:
+
 1. File Copy Test: measures the rate at which data can be transferred from one file to another, using various file sizes: 256Byte, 1KB, 4KB. Those tests ran for 10 seconds each, and each time the Bandwidth Rate and Copy Completion Time were captured in addition to the number of completed files that were successfully completed.
+
 2. PIPE Throughput: measures the time a process can write 512 bytes file to a pipe.
+
 3. PIPE Switching: this is similar to the previous test although the piping is between two processes in bi-directional way. 
+
 4. Process Creation: measures the time a process can fork and reap a child that immediately exits.
+
 5. EXECL: measures the number of execl calls that can be performed per minute.
+
 6. Shell Scripts: measures the number of shell script that can be ran per minute.
 
 ##### Screenshots: 
